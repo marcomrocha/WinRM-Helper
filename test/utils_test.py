@@ -1,6 +1,6 @@
 import unittest
 
-# from utils.winrm.winrm_session import winrm_session
+# from u.winrm.winrm_session import winrm_session
 
 
 class TestStringMethods(unittest.TestCase):

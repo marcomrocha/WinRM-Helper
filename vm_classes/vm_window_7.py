@@ -1,5 +1,5 @@
 
-from class_example.Ivm import Ivm
+from vm_interfaces.Ivm import Ivm
 
 class vm_window_7(Ivm):
 
@@ -22,4 +22,8 @@ class vm_window_7(Ivm):
 
     def get_user_password(self):
         return self.user_password
+
+
+    def get_name_virtual_machine(self):
+        print('It am windows 7')
 
