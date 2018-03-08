@@ -1,7 +1,7 @@
 import winrm
 
-from class_example.vm_window_7 import vm_window_7
-
+from vm_classes.vm_window_7 import vm_window_7
+import json
 
 class winrm_session:
     global session
@@ -50,6 +50,10 @@ class winrm_session:
 
 
 
+
+
+
+
 win7 = vm_window_7('192.168.130.129', '\Marco Mendez', 'Control123')
 win8 = vm_window_7('192.168.130.129', '\Marco Mendez', 'Control123')
 
@@ -57,8 +61,15 @@ winrm = winrm_session(win8)
 print(winrm.host_name)
 print(winrm.user_name)
 print(winrm.user_password)
-print(winrm.get_execution_policy())
 
 
 
 
+
+
+m = winrm.get_ipconfig_all()
+n = json.dumps(m)
+o = json.loads(n)
+print '*************************************'
+print o
+print '*************************************'
