@@ -63,13 +63,3 @@ print(winrm.user_name)
 print(winrm.user_password)
 
 
-
-
-
-
-m = winrm.get_ipconfig_all()
-n = json.dumps(m)
-o = json.loads(n)
-print '*************************************'
-print o
-print '*************************************'
