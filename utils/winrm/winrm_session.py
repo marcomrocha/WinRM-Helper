@@ -47,19 +47,3 @@ class winrm_session:
         print('********************* Configuration HostName *******************d**')
         return self.session.run_ps(path).std_out
 
-
-
-
-
-
-
-
-win7 = vm_window_7('192.168.130.129', '\Marco Mendez', 'Control123')
-win8 = vm_window_7('192.168.130.129', '\Marco Mendez', 'Control123')
-
-winrm = winrm_session(win8)
-print(winrm.host_name)
-print(winrm.user_name)
-print(winrm.user_password)
-
-
